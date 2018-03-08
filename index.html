@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+	<title>Web Development | Coding Club | IIT Ropar</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.min.css" media="screen,projection" rel="stylesheet">
+	<link href="css/style.css" media="screen,projection" rel="stylesheet">
+</head>
+
+<div class="navbar-fixed">
+	<nav style="max-height:53px;line-height: 50px;background-color: white;border-top:2px solid #b92b27;z-index:800;border-bottom:1px solid #ddd;box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);font-size: 12px;box-sizing:border-box;">
+		<div class="container nav-wrapper">
+			<a href="index.html" class="brand-logo" style="color: #b92b27;font-size: 180%;">Coding Club</a>
+			<a href="javascript:void(0)" data-activates="mobile-demo" class="button-collapse" style="color: #b92b27;"><i class="material-icons">menu</i></a>
+			<ul class="hide-on-med-and-down right" style="padding-left: 200px;">
+				<li class="active" ><a href="index.html" style="color: #999;font-size:150%">Tasks</a></li>
+			</ul>
+            <ul class="side-nav" id="mobile-demo">
+                <a href="#!" style="text-align: right;"><i class="large material-icons black-text">close</i></a>
+				<li><a href="index.html">Tasks</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- Nav bar and side nav bar code ends here -->
+
+<div class="row">
+	<div class="col l2 xl2"></div>
+	<div class="col s12 m12 l8 xl8">
+		<table class="striped">
+			<thead>
+				<tr>
+					<th>Index</th>
+					<th>Task</th>
+					<th>Deadline</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td><a href="tasks/1/index.html" target="_blank">Hosting you web page on internet</a></td>
+					<td>10/03/2018</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+ 
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+$(document).ready(function(){
+	$('.button-collapse').sideNav({
+		closeOnClick: true
+	});
+	$('.button-collapse').sideNav({
+		menuWidth: 200, // Default is 240
+		edge: 'left', // Choose the horizontal origin
+		closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor	
+	});
+});
+</script>
+</body>
+</html>
