@@ -16,25 +16,6 @@ body{
  user-select: none; 
 }
 
-a:link {
-    color: black;
-}
-
-/* visited link */
-a:visited {
-    color: #ee6e73;
-}
-
-/* mouse over link */
-a:hover {
-    color: blue;
-}
-
-/* selected link */
-a:active {
-    color: blue;
-}
-
 .navbar-fixed{
     z-index: 1000;
 }
